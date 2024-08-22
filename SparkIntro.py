@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 # Create a Spark Session
 spark = SparkSession.builder\
                     .master("local")\
-                    .appName("Test1")\
+                    .appName("SparkIntro")\
                     .getOrCreate()
 
 # Define the data and schema
