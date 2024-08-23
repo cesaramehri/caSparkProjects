@@ -39,3 +39,4 @@ print(spark.catalog.listTables())
 
 # Drop View
 spark.catalog.dropTempView("df_data_view")
+
