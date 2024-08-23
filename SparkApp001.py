@@ -39,3 +39,4 @@ spark.sql("""SELECT *
              ORDER BY value desc
           """)\
       .show(10)
+
