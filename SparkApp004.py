@@ -21,6 +21,4 @@ print("cubed_x = \n", cubed(x))
 
 # Execute UDF as a Spark vectorized UDF
 df = spark.range(1,6)
-df.select("id", cubed_udf(col("id"))).show()
-
-# 
+df.select("id", cubed_udf(col("id"))).show() # -- Problem here!!
