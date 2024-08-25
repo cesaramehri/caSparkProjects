@@ -6,6 +6,7 @@ spark = SparkSession.builder\
                     .master("local")\
                     .appName("SparkIntro")\
                     .getOrCreate()
+print(spark)
 
 # Define the data and schema
 data = [('James','','Smith','1991-04-01','M',3000),
