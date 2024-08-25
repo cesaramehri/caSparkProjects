@@ -33,5 +33,5 @@ if __name__ == "__main__":
     # Write the data into Cassandra
     usersDF.write.format("org.apache.spark.sql.cassandra")\
                  .mode("append")\
-                 .options(table = "users", keyspace = "moviesdata")\
+                 .options(keyspace = "moviesdata", table = "users")\
                  .save()

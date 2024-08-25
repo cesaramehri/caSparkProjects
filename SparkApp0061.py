@@ -15,7 +15,7 @@ if __name__ == "__main__":
     readUser = spark.read\
                     .format("org.apache.spark.sql.cassandra")\
                     .mode("append")\
-                    .options(table = "movies", keyspace = "user")\
+                    .options(keyspace = "movies", table = "user")\
                     .save()
     
     # Create a view on the df 
