@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # Read data from MongoDB table into a Dataframe
     readUser = spark.read\
                      .format("com.mongodb.spark.sql.DefaultSource")\
-                     .option("uri","mongodb://127.0.0.1/moviesdata.user")\
+                     .option("uri","mongodb://127.0.0.1/movies.user")\
                      .load()
     
     # Create a view on the df 
