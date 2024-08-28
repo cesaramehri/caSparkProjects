@@ -17,7 +17,7 @@ lines = ( spark.readStream\
 )
 
 # Data Processing: Transform Data (Splitting, Counting)
-# 1. Split the lines into single words, as a result you obtain words = set(word, value)
+# 1. Split the lines into single words (word1, word 2, ...)
 words = lines.select(split(col("value"), " ").alias("word"))
 
 # 2. Count the number words by word, as a result you obtain words_cnt = set(word, word frequency) 
