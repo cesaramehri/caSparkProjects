@@ -18,7 +18,7 @@ df_schema = StructType([\
                     ])
 
 # Read the Dataframe from a CSV File
-inputFilePath = "./csvFiles/inputFiles/fakefriends.csv"
+inputFilePath = "./demosFiles/batch/input/fakefriends.csv"
 df_data = spark.read.format('csv')\
                     .schema(df_schema)\
                     .option("inferSchema","False")\
@@ -37,7 +37,7 @@ df_data_processed = df_data.select(df_data.UserId, df_data.Name, df_data.Age, df
                            .cache()
 
 # Write the dataframe into a CSV file
-outputFolderPath = "./csvFiles/outputFiles/op"
+outputFolderPath = "./demosFiles/batch/output/op"
 # df_data_processed.write.format("csv")\
 #                        .mode("overwrite")\
 #                        .option("path", outputFolderPath)\

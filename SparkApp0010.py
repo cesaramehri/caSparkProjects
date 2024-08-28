@@ -10,7 +10,7 @@ spark = SparkSession.builder\
                     .getOrCreate()
 
 # Creating a Dataframe on a CSV File
-filePath = "./csvFiles/inputFiles/operations_management.csv"
+filePath = "./demosFiles/batch/input/operations_management.csv"
 df_data = spark.read.format("csv")\
                     .option("inferSchema", "True")\
                     .option("header", "True")\
