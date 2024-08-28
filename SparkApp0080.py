@@ -8,3 +8,4 @@ from pyspark.sql.functions import *
 # Defining directories' paths
 inputDir = "./demosFiles/streaming/input"
 outputDir = "./demosFiles/streaming/output"
+checkpointDir = "C:/checkpoint/"
