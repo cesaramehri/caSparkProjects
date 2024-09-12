@@ -19,3 +19,5 @@ schema = ["firstname","middlename","lastname","dob","gender","salary"]
 # Create a dataframe for the defined data/schema
 df = spark.createDataFrame(data=data, schema=schema)
 print(df.printSchema())
+
+# test
